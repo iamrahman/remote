@@ -14,11 +14,11 @@ class students(db.Model):
    addr = db.Column(db.String(200)) 
    pin = db.Column(db.String(10))
 
-def __init__(self, name, city, addr,pin):
+def __init__(self, name, city, addr,pinnumber):
    self.name = name
    self.city = city
    self.addr = addr
-   self.pin = pin
+   self.pin = pinnumber
 
 @app.route('/')
 def show_all():
